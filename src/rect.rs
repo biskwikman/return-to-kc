@@ -1,3 +1,4 @@
+#[derive(Debug)]
 pub struct Rect {
     pub x1: i32,
     pub x2: i32,
@@ -10,7 +11,7 @@ impl Rect {
         Rect {
             x1: x,
             y1: y,
-            x2: x * w,
+            x2: x + w,
             y2: y + h,
         }
     }
